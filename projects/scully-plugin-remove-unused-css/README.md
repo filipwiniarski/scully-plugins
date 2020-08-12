@@ -12,11 +12,11 @@ Highly recommended to use this plugin along with CSS libraries like Angular Mate
 To install this library with `npm` run
 
 ```
-$ npm install scully-remove-unused-css --save-dev
+$ npm install scully-plugin-remove-unused-css --save-dev
 ```
 or with `yarn`
 ```
-$ yarn add scully-remove-unused-css --dev
+$ yarn add scully-plugin-remove-unused-css --dev
 ```
 
 This package depends on packages:
