@@ -32,7 +32,7 @@ or use the `postRenderers` on a route configuration to execute it for a specific
 
 ```js
 const { RouteTypes } = require('@scullyio/scully');
-const { RemoveUnusedCSSPlugin } = require('scully-remove-unused-css');
+const { RemoveUnusedCSSPlugin } = require('scully-plugin-remove-unused-css');
 
 exports.config = {
   projectRoot: './src/app',
