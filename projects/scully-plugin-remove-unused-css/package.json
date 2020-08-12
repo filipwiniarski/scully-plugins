@@ -1,6 +1,6 @@
 {
   "name": "scully-plugin-remove-unused-css",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "peerDependencies": {
     "@scullyio/scully": ">=1.0.0-beta.0"
   },
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/filipwiniarski/scully-plugin-remove-unused-css"
+    "url": "https://github.com/filipwiniarski/scully-plugins/tree/master/projects/scully-plugin-remove-unused-css"
   },
   "author": "Filip Winiarski",
   "license": "MIT"

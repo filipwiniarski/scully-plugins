@@ -1,13 +1,11 @@
 {
-  "name": "scully-plugin-remove-unused-css",
-  "version": "0.0.0",
+  "name": "scully-plugins",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build:scully-plugin-remove-unused-css": "ng build scully-plugin-remove-unused-css --prod"
   },
   "private": true,
   "dependencies": {
