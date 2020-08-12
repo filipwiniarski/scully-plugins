@@ -1,6 +1,6 @@
 {
-  "name": "scully-plugin-remove-unused-css",
-  "version": "1.0.1",
+  "name": "scully-plugins",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
