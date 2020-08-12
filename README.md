@@ -1,27 +1,61 @@
-# ScullyPluginRemoveUnusedCss
+# scully-plugin-remove-unused-css
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+This `postRenderer` plugin for [Scully](http://scully.io/) will remove unused CSS from the HTML of your prerendered pages. 
 
-## Development server
+Plugin will remove unnecessary CSS code from rendered Scully static HTMLs,
+which will decrease the size of your pages and drastically improve loading times.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Highly recommended to use this plugin along with CSS libraries like Angular Material.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install this library with `npm` run
 
-## Build
+```
+$ npm install scully-remove-unused-css --save-dev
+```
+or with `yarn`
+```
+$ yarn add scully-remove-unused-css --dev
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This package depends on packages:
+- [`extract-css`](https://www.npmjs.com/package/extract-css)
+- [`PurgeCSS`](https://www.npmjs.com/package/extract-css)
 
-## Running unit tests
+Both will be installed during `scully-remove-unused-css` installation.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+Import and add the plugin to the `defaultPostRenderers` to execute it on all rendered pages 
+or use the `postRenderers` on a route configuration to execute it for a specific route. 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```js
+const { RouteTypes } = require('@scullyio/scully');
+const { RemoveUnusedCSSPlugin } = require('scully-remove-unused-css');
 
-## Further help
+exports.config = {
+  projectRoot: './src/app',
+  defaultPostRenderers: [RemoveUnusedCSSPlugin],  // for all routes
+  routes: {
+    '/blog/:slug': {
+      type: RouteTypes.contentFolder,
+      slug: {
+        folder: "./blog"
+      },
+      postRenderers: [RemoveUnusedCSSPlugin]      // per route config
+    },
+  }
+};
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Now build your app and then just run the Scully command.
+
+```shell script
+npm run build --prod
+npm run scully
+```
+
+## More information
+
+More info on getting started with [Scully](http://scully.io/) can be found on [their homepage](http://scully.io/).
