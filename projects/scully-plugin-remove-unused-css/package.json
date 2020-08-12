@@ -1,0 +1,33 @@
+{
+  "name": "scully-plugin-remove-unused-css",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@scullyio/scully": ">=1.0.0-beta.0"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0",
+    "purgecss": "^2.3.0",
+    "extract-css": "^1.5.5"
+  },
+  "maintainers": [
+    "Filip Winiarski <filipwiniarski@gmail.com>"
+  ],
+  "keywords": [
+    "angular",
+    "scully",
+    "html",
+    "purgecss",
+    "jamstack",
+    "seo",
+    "ssg"
+  ],
+  "contributors": [
+    "Filip Winiarski <filipwiniarski@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/filipwiniarski/scully-plugin-remove-unused-css"
+  },
+  "author": "Filip Winiarski",
+  "license": "MIT"
+}

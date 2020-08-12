@@ -6,5 +6,12 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/scully-plugin-remove-unused-css/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/scully-plugin-remove-unused-css/tsconfig.spec.json"
+    }
+]
 }
