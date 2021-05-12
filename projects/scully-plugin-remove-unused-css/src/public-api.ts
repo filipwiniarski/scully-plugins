@@ -3,3 +3,5 @@
  */
 
 export { RemoveUnusedCSSPlugin } from './lib';
+export { removeUnusedCSSPlugin } from './lib';
+

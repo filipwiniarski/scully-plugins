@@ -1,13 +1,16 @@
 {
   "name": "scully-plugin-remove-unused-css",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "peerDependencies": {
-    "@scullyio/scully": ">=1.0.0-beta.0"
+    "@scullyio/scully": ">=1.1.1"
   },
   "dependencies": {
     "tslib": "^2.0.0",
-    "purgecss": "^2.3.0",
-    "extract-css": "^1.5.5"
+    "purgecss": "^4.0.3",
+    "extract-css": "^2.0.0"
+  },
+  "devDependencies": {
+    "@scullyio/scully": "^1.1.1"
   },
   "maintainers": [
     "Filip Winiarski <filipwiniarski@gmail.com>"
